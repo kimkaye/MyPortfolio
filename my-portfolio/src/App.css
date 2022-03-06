@@ -1,0 +1,151 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+/*Home page css*/
+.ImageCarousel{
+  width: 30rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/*hide ImageCarousel on mobile*/
+@media screen and (max-width: 600px) {
+  .ImageCarousel {
+    display: none;
+  }
+  .tech-h4 {
+    font-size: medium;
+  }
+  .technologies-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .icon{
+    padding: 0;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.welcomeText {
+  /*width: 30rem;*/
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  align-content: space-between;
+  align-items: center;
+}
+.welcome{
+  font-size: 30px;
+  padding-bottom: 10px;
+  align-content: center;
+}
+.homeButton{
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: white;
+}
+.homeButton:after {
+  content: "";
+  background-color: burlywood;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.homeButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
+.typewriter-wrapper {
+  width: 30rem;
+}
+.typewriter-wrapper-about{
+  width: 20rem;
+}
+/*About me page css*/
+@media (min-width: 700px) {
+  .icon {
+    color: black;
+    padding: 2rem;
+    size: 30rem;
+  }
+}
+.svg-inline--fa{
+  height: 4vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.about-img{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 90%;
+  transition: all 0.5s ease-in-out;
+  align-content: center;
+  align-items: center;
+}
+/*footer css*/
+.footer{
+  position: fixed;
+  bottom: 0; /* Stick it to the bottom */
+  max-height: 70px;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 'logo nav';
+  background-color: burlywood;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+a{
+  color: white;
+}
+.Logo{
+
+}
